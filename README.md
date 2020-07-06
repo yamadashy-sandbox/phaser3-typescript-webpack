@@ -1,8 +1,12 @@
-# Phaser3 Typescript Webpack
+# Phaser3 TypeScript webpack
+WIP
 
-# packages
-- phaser 3.23
+# Uses
+## Packages
+- Phaser 3.23
 - TypeScript 3.9
 - webpack 4.43
-- babel 7.10
-- eslint 7.4
+- Babel 7.10
+- ESLint 7.4
+- Sass
+

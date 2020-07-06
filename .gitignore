@@ -262,3 +262,4 @@ dist
 # Custom
 # $ gibo dump macOS Windows VisualStudioCode JetBrains Node > .gitignore
 # ==================================================
+.idea

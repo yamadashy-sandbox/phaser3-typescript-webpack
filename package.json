@@ -8,7 +8,9 @@
         "url": "https://github.com/yamadashy-sandbox/phaser3-typescript-webpack/issues"
     },
     "scripts": {
-        "start": "webpack --mode development --env local --watch --devtool inline-source-map"
+        "build": "NODE_ENV=production webpack",
+        "dev": "NODE_ENV=development webpack -w",
+        "start": "NODE_ENV=development webpack-dev-server"
     },
     "dependencies": {
         "phaser": "^3.23.0"
@@ -26,10 +28,13 @@
         "eslint": "^7.4.0",
         "file-loader": "^6.0.0",
         "html-webpack-plugin": "^4.3.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.14.1",
         "sass-loader": "^9.0.1",
         "typescript": "^3.9.6",
         "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.12"
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
     },
     "engines": {
         "node": ">=10",

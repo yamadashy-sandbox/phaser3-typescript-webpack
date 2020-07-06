@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/phaser/types"
+        ],
+        "types": [
+            "Phaser"
+        ]
+        "allowJs": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "noEmit": true
+    }
+}
