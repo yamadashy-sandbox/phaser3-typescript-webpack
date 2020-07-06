@@ -3,6 +3,10 @@
     "version": "0.0.0",
     "description": "",
     "author": "yamadashy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yamadashy-sandbox/phaser3-typescript-webpack/issues"
+    },
     "scripts": {
         "start": "webpack --mode development --env local --watch --devtool inline-source-map"
     },
@@ -26,5 +30,9 @@
         "typescript": "^3.9.6",
         "webpack": "^4.43.0",
         "webpack-cli": "^3.3.12"
+    },
+    "engines": {
+        "node": ">=10",
+        "yarn": "^1.18.0"
     }
 }
