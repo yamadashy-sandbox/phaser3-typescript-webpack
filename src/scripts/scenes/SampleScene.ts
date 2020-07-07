@@ -1,3 +1,7 @@
+/**
+ * @see https://phaser.io/examples/v3/view/physics/arcade/basic-platform
+ * @see https://github.com/photonstorm/phaser3-examples/blob/master/public/src/physics/arcade/basic%20platform.js
+ */
 class SampleScene extends Phaser.Scene {
   private player: Phaser.Physics.Arcade.Sprite;
   private stars: Phaser.Physics.Arcade.Group;

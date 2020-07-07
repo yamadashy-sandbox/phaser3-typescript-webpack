@@ -15,14 +15,23 @@ module.exports = () => {
       path: DIST_PATH,
       filename: 'js/[name].bundle.js'
     },
+    plugins: [
+      // For CSS
+      new MiniCssExtractPlugin({
+        path: DIST_PATH,
+        filename: 'css/[name].css',
+      }),
+    ],
     module: {
       rules: [
+        // TypeScript (Babel)
         {
           test: /\.ts$/,
           include: path.join(SRC_PATH, 'scripts'),
           loader: 'babel-loader?cacheDirectory',
           exclude: /node_modules/,
         },
+        // SCSS
         {
           test: /\.scss$/,
           include: path.join(SRC_PATH, 'styles'),
@@ -39,12 +48,6 @@ module.exports = () => {
         }
       ]
     },
-    plugins: [
-      new MiniCssExtractPlugin({
-        path: DIST_PATH,
-        filename: 'css/[name].css',
-      }),
-    ],
     resolve: {
       extensions: ['.ts', '.js']
     },
